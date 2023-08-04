@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* lo pego desde las indicaciones de google */
 }
-
+/* A los id los llamo con "#" y las clases las llamo con "." */
 #contacto, #inicio {
     /* aplico fondo al id de contacto en el body */
     background-image: url("../images/fondo-contacto.png");
