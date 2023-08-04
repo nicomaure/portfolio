@@ -276,8 +276,11 @@ nav .active {
     font-size: 80px;
     color: white;
 }
-#experiencia h2, #experiencia h4, #formacion h2, #formacion h4 {
+#experiencia h2, #experiencia h4 {
    color: #370A6D;
+}
+#formacion h2, #formacion h4{
+    color: #E20000;
 }
 #experiencia h2, #formacion h2 {
     font-weight: 400;
@@ -332,3 +335,4 @@ nav .active {
     color: white;
 
 }
+
