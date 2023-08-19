@@ -1,3 +1,6 @@
+<?php $pg = "sobre-mi"; 
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -16,37 +19,7 @@
 
 <body id="sobre-mi" class="d-flex flex-column h-100">
     <header class="container"><!-- etiquetas semanticas-->
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- boton hamburgesa que se despliega-->
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active px-4" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav"><!-- boton para curriculum-->
-                        <li class="float-sm-end">
-                            <a class="btn btn-rojo" href="contacto.html">Descargar mi CV <i
-                                    class="fas fa-download"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php include_once("menu.php"); ?>
     </header>
     <main>
         <section id="bio" class="container">
@@ -56,7 +29,7 @@
                     <p class="">Apasionado por la tecnología y la informática. Estudiante del curso de programación Full
                         Stack
                         DepcSuite.</p>
-                    <a href="contacto.html" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
+                    <a href="contacto.php" class="btn btn-rojo my-5 d-none d-sm-block w-25">Enviar mensaje</a>
                 </div>
                 <div class="col-10 col-sm-3 py-5 pe-5 d-none d-sm-block">
                     <img src="images/perfil.png" alt="Nico" class="img-fluid">
