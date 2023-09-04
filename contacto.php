@@ -6,6 +6,9 @@ if($_POST){
     $telefono = $_POST["txtTelefono"];
     $mensaje = $_POST["txtMensaje"];
 
+   
+   
+
     //Varios destinatarios
     $para = "nicomau@gmail.com";
     $titulo = 'Recibiste un mensaje desde tu Web';
@@ -29,6 +32,7 @@ if($_POST){
     // Enviarlo
     // mail($para, $titulo, $cuerpo, $cabeceras);
     header("Location: confirmacion-envio.php");
+    
 }
 
 
