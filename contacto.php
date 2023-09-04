@@ -1,4 +1,37 @@
 <?php $pg = "contacto"; 
+
+if($_POST){
+    $nombre = $_POST¨["txtNombre"];
+    $correo = $_POST ["txtCorreo"];
+    $telefono = $_POST["txtTelefono"];
+    $mensaje = $_POST["txtMensaje"];
+
+    //Varios destinatarios
+    $para = "nicomau@gmail.com";
+    $titulo = 'Recibiste un mensaje desde tu Web';
+
+    //mensaje
+    $cuerpo = "
+    Nombre: $nombre <br>
+    Correo: $correo <br>
+    Telefono: $telefono <br>
+    Mensaje: $mensaje
+    ";
+
+    // Para enviar un correo HTML, debe establecerce la cabecera Content-type
+    $cabeceras = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+
+    // Cabecera adicionales
+    $cabeceras .= 'To: nicomau@gmail.com' . "\r\n";
+    $cabeceras .= 'From: contacto@nmaure.com.ar' . "\r\n";
+
+    // Enviarlo
+    // mail($para, $titulo, $cuerpo, $cabeceras);
+    header("Location: confirmacion-envio.php");
+}
+
+
 ?>
 
 <!DOCTYPE html>
