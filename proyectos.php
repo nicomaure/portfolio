@@ -95,7 +95,7 @@
                         class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div class="col-12 col-sm-3">
-                Sponsor <a href="https://depcsuite.com" target="_blank">DePC Suite</a>
+                Sponsor <a href="https://lujantech.com.ar" target="_blank">LujanTech</a>
             </div>
             <div class="col-12 col-sm-3">
                 <a href="mailto:nicomau@gmail.com">nicomau@gmail.com</a>
